@@ -18,8 +18,18 @@
     <form id="survey-form">
       <div class="input-group">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required />
       </div>
+
+      <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+
+      <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
