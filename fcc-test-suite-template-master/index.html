@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Fork Me! FCC: Test Suite Template</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <br />
+    <br />
 
-<body>
-  <br />
-  <br />
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
 
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">
-    Thank you for taking the time to help us improve the platform
-  </p>
+    <form id="survey-form">
+      <div class="input-group">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name-label"
+          id="name"
+          required
+          placeholder="Enter your name"
+        />
+      </div>
 
-  <form id="survey-form">
-    <div class="input-group">
+      <div class="input-group">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email-label"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
 
-      <label for="name" id="name-label">Name</label>
-      <input type="text" name="name-label" id="name" required />
-    </div>
+      <div class="input-group">
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          name="number-label"
+          id="number"
+          min="18"
+          max="40"
+          required
+          placeholder="Enter your age"
+        />
+      </div>
+      <div class="input-group">
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown">
+          <option value=" select your role" disabled>select your role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner"> Full Time Learner</option>
+          <option value="prefer">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
-    <div class="input-group">
-      <label for="email" id="email-label">Email</label>
-      <input type="email" name="email-label" id="email" required />
-    </div>
+      <!-- User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
 
-    <div class="input-group">
-      <label for="number" id="number-label">Age</label>
-      <input type="number" name="number-label" id="number" min="18" max="40" required />
-    </div>
+User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+    </form>
 
-  </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-  <!--
+    <!--
 
     Hello Camper!
 
@@ -49,7 +83,6 @@
     - The freeCodeCamp Team
 
     -->
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="js/index.js"></script>
+  </body>
 </html>
